@@ -76,7 +76,7 @@ Asansol Engineering College
 ## 📫 Connect With Me
 
 * **GitHub:** https://github.com/Arghya746
-* **LinkedIn:** Add your LinkedIn profile link
+* **LinkedIn:** www.linkedin.com/in/arghya-singha-b5710a367
 * **Email:** [arghyasingha101@gmail.com](mailto:arghyasingha101@gmail.com)
 
 ---
