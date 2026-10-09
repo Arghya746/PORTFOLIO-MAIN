@@ -40,6 +40,10 @@ I enjoy building responsive, user-friendly web applications and continuously imp
 
 ## 📂 Featured Projects
 
+### 🏋️ Gym Management System
+
+A gym-focused management system designed to bring member records, attendance, and everyday operations into one easy-to-use experience.
+
 ### 🎵 Spotify Clone
 
 A responsive music streaming interface built using React.

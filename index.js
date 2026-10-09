@@ -171,7 +171,7 @@ const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transform = '';
         }
     });
 }, observerOptions);
@@ -278,13 +278,20 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
             const img = entry.target;
             img.style.opacity = '0';
             img.style.transition = 'opacity 0.3s ease';
-            
-            img.onload = () => {
+
+            const revealImage = () => {
                 img.style.opacity = '1';
             };
-            
-            if (!img.src) {
+
+            img.addEventListener('load', revealImage, { once: true });
+            img.addEventListener('error', revealImage, { once: true });
+
+            if (!img.src && img.dataset.src) {
                 img.src = img.dataset.src;
+            }
+
+            if (img.complete) {
+                revealImage();
             }
             
             observer.unobserve(img);
